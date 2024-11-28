@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وب‌سایت ساده من</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>به وب‌سایت من خوش آمدید!</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>درباره من</h2>
+            <p>این یک وب‌سایت ساده است که با استفاده از HTML، CSS و JavaScript ساخته شده است.</p>
+            <button onclick="showMessage()">کلیک کنید</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 طراحی شده توسط من</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* استایل‌دهی عمومی */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* هدر صفحه */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* استایل برای بخش‌های اصلی سایت */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* استایل دکمه */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* فوتر */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+// این تابع هنگام کلیک بر دکمه اجرا می‌شود.
+function showMessage() {
+    alert("سلام! شما دکمه را کلیک کرده‌اید.");
+}
